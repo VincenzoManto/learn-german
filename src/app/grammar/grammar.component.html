@@ -1,15 +1,30 @@
-<div>
+<p class="d-inline-flex gap-1">
+  <button class="btn " type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+    Prepositions
+  </button>
+</p>
+<div class="collapse" id="collapseExample">
     <h1>Prepositions</h1>
     <!-- data is an example of passing value as a property -->
     <!-- headerStyles is an example of passing value as an attribute - note that it needs to be stringified -->
-    <active-table
-      #tableG
-      headerStyles='{"default":{"backgroundColor": "#d6d6d630"}}'
-    />
+    <app-fida-table [name]="'P'"></app-fida-table>
+
+</div>
+<br>
+    <p class="d-inline-flex gap-1">
+      <button class="btn" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample2" aria-expanded="false" aria-controls="collapseExample">
+        Cases
+      </button>
+    </p>
+    <div class="collapse" id="collapseExample2">
+
+
+    <h1>Cases</h1>
+    <!-- data is an example of passing value as a property -->
+    <!-- headerStyles is an example of passing value as an attribute - note that it needs to be stringified -->
+    <app-fida-table [name]="'C'"></app-fida-table>
+
   </div>
 
-  <button (click)="save()" class="btn">
-    Salva
-  </button>
 
   
