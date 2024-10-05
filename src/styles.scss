@@ -1,0 +1,21 @@
+/* You can add global styles to this file, and also import other style files */
+
+
+.collapse {
+    &:not(.show) {
+      display: none;
+    }
+  }
+  
+  .collapsing {
+    height: 0;
+    overflow: hidden;
+    transition: height .35s ease;
+  
+    &.collapse-horizontal {
+      width: 0;
+      height: auto;
+    transition: width .35s ease;
+
+    }
+  }
