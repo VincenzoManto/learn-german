@@ -57,7 +57,8 @@ export class TableComponent implements AfterViewInit {
           ).toLowerCase(),
           cellStyle: {
             width: e['width'],
-          },
+/*             backgroundColor: e['backgroundColor'],
+ */          },
         };
       }
     );
@@ -75,6 +76,10 @@ export class TableComponent implements AfterViewInit {
     };
     const shadow = this.elementRef.nativeElement.shadowRoot;
     this.elementRef.nativeElement.onDataUpdate = (dataUpdateCol: any) => {
+      setTimeout(() => {
+        shadow.querySelector('.outer-container').style.height = 'auto';
+        shadow.querySelector('table').style.margin = 'auto';
+      }, 200);
       shadow.querySelectorAll('td').forEach((e: HTMLElement) => {
         const plug = (ev: Event) => {
           ev.preventDefault();
@@ -102,3 +107,5 @@ export class TableComponent implements AfterViewInit {
     this.salvato = !this.salvato;
   }
 }
+
+
