@@ -17,7 +17,7 @@ jobs:
       - name: Set up Node.js
         uses: actions/setup-node@v3
         with:
-          node-version: '16'  # Specify the version of Node.js that matches Angular requirements
+          node-version: '18'  # Specify the version of Node.js that matches Angular requirements
 
       - name: Install dependencies
         run: npm install
