@@ -10,6 +10,9 @@ import { HttpClientModule } from '@angular/common/http';
 import { FormsModule } from '@angular/forms';
 import { RouterModule } from '@angular/router';
 import { TableComponent } from './grammar/table.component';
+import { OrderComponent } from './quiz/order.component';
+import { ModalComponent } from './quiz/modal.component';
+import { DragDropModule } from '@angular/cdk/drag-drop';
 
 @NgModule({
   declarations: [
@@ -18,7 +21,9 @@ import { TableComponent } from './grammar/table.component';
     VocabularyComponent,
     QuizComponent,
     AppComponent,
-    TableComponent
+    TableComponent,
+    OrderComponent,
+    ModalComponent
   ],
   imports: [
     FormsModule,
@@ -26,6 +31,7 @@ import { TableComponent } from './grammar/table.component';
     HttpClientModule,
     RouterModule,
     AppRoutingModule,
+    DragDropModule
   ],
   providers: [],
   bootstrap: [AppComponent],

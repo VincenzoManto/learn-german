@@ -1,13 +1,41 @@
 <active-table
-      #tableP
-      headerStyles='{"default":{"backgroundColor": "#d6d6d630"}}'
-    />
-    <div class="d-flex">
-    <button
-        class="btn btn-sm w-auto"
-      (click)="save()"
-      [disabled]="salvato"
-    >
-      Salva
-    </button>
+  #tableP
+  filter='[
+    {
+      "caseButton": false,
+      "dropdown": true,
+      "placeholderTemplate": "Filter by {headerName}",
+      "position": "top-left"
+    }
+  ]'
+  pagination='{
+    "styles": {
+      "pageButtons": {
+        "buttons": {
+          "default": {"color": "grey", "stroke": "grey", "backgroundColor": "none", "border":"none", "marginRight": "5px", "marginTop": "3px", "height": "31px", "width": "31px", "borderRadius": "20px"}},
+        "activeButton": {"default": {"backgroundColor": "#4a69d4", "border":"none", "color": "white"}},
+        "actionButtons": {"default": {"border": "none"}},
+        "disabledButtons": {"default": {"backgroundColor": "white"}},
+        "firstVisibleButtonOverride": {},
+        "lastVisibleButtonOverride": {}
+    }},
+    "positions": {"pageButtons": {"position": "bottom-center"}},
+    "rowsPerPage": 10
+  }'
+  headerIconStyle='{
+    "filterColor": "brightness(0) saturate(100%) invert(16%) sepia(85%) saturate(1892%) hue-rotate(210deg) brightness(88%) contrast(103%)",
+    "scale": {"x": 1.5, "y": 1.5}
+  }'
+  stickyHeader="true"
+  tableStyle='{
+    "borderRadius": "10px",
+    "boxShadow": "rgb(172 172 172 / 17%) 0px 0.5px 1px 0px"
+  }'
+  cellStyle='{"borderTop": "1px solid #00000039"}'
+  cellStyle='{"borderRight": "1px solid #00000008"}'
+/>
+<div class="d-flex justify-content-center p-2">
+  <button class="btn btnSave btn-sm w-auto" (click)="save()" [disabled]="salvato">
+    Salva
+  </button>
 </div>

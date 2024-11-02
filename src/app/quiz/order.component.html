@@ -1,0 +1,11 @@
+
+  <div cdkDropList #dropList="cdkDropList" class="drop-list" (cdkDropListDropped)="drop($event)">
+
+  <div *ngFor="let word of shuffledWords" cdkDrag class="drag-item" (dblclick)="ciao(word)">
+    {{ word }}
+  </div>
+</div>
+<br>
+<button class="btn btn-primary "
+    (click)="checkOrder()"> I think I'm correct!😊 
+</button>

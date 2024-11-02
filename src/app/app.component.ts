@@ -1,5 +1,5 @@
 import { Component } from "@angular/core";
-
+declare var JSConfetti: any;
 @Component({
   selector: "app-root",
   templateUrl: "./app.component.html",

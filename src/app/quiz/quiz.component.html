@@ -1,1 +1,18 @@
-<div #container></div>
+<br><div class="d-inline">
+    <ng-container *ngFor="let item of preSlice; let last = last;">
+        <span (dblclick)="ciaoPre()">{{item}}{{last ? '' : ' '}}</span>
+      </ng-container>
+    <select [(ngModel)]="value" (ngModelChange)="checkOption()" class="form-control d-inline w-auto">
+        <option value="{{word}}" *ngFor="let word of words">{{word}}</option>
+    </select>
+    <ng-container *ngFor="let item of postSlice; let last = last;">
+        <span (dblclick)="ciaoPost()">{{item}}{{last ? '' : ' '}}</span>
+      </ng-container>
+</div>
+<br>
+<hr>
+<br>
+<div>
+<app-order-quiz [name]="'P'" ></app-order-quiz></div>
+<hr>
+<div><app-modal-quiz [name]="'P'" ></app-modal-quiz></div>
