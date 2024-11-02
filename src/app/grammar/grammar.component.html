@@ -4,27 +4,127 @@
   </button>
 </p>
 <div class="collapse bg-light p-3 rounded-4" id="collapseExample">
-    <h1>Prepositions</h1>
+    <h6>Prepositions</h6>
     <!-- data is an example of passing value as a property -->
     <!-- headerStyles is an example of passing value as an attribute - note that it needs to be stringified -->
     <app-fida-table [name]="'P'"></app-fida-table>
 
 </div>
-<br>
+
     <p class="d-flex gap-1 p-2 m-0">
       <button class="btn" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample2" aria-expanded="false" aria-controls="collapseExample">
-        Cases
+        Articles
       </button>
     </p>
     <div class="collapse bg-light p-3 rounded-4" id="collapseExample2">
 
 
-    <h1>Cases</h1>
+    <h6>Definite articles</h6>
     <!-- data is an example of passing value as a property -->
     <!-- headerStyles is an example of passing value as an attribute - note that it needs to be stringified -->
     <app-fida-table [name]="'C'"></app-fida-table>
 
+    <h6>Indefinite articles</h6>
+    <!-- data is an example of passing value as a property -->
+    <!-- headerStyles is an example of passing value as an attribute - note that it needs to be stringified -->
+    <app-fida-table [name]="'A'"></app-fida-table>
+
   </div>
 
+  <p class="d-flex gap-1 p-2 m-0">
+    <button class="btn" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample6" aria-expanded="false" aria-controls="collapseExample">
+      Irregular verbs
+    </button>
+  </p>
+  <div class="collapse bg-light p-3 rounded-4" id="collapseExample6">
 
-  
+
+  <h6>a ➔ ä</h6>
+  <!-- data is an example of passing value as a property -->
+  <!-- headerStyles is an example of passing value as an attribute - note that it needs to be stringified -->
+  <app-fida-table [name]="'AE'"></app-fida-table>
+
+  <h6>e ➔ ie</h6>
+  <!-- data is an example of passing value as a property -->
+  <!-- headerStyles is an example of passing value as an attribute - note that it needs to be stringified -->
+  <app-fida-table [name]="'IE'"></app-fida-table>
+
+  <h6>e ➔ i</h6>
+  <!-- data is an example of passing value as a property -->
+  <!-- headerStyles is an example of passing value as an attribute - note that it needs to be stringified -->
+  <app-fida-table [name]="'I'"></app-fida-table>
+
+</div>
+
+  <p class="d-flex gap-1 p-2 m-0">
+    <button class="btn" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample3" aria-expanded="false" aria-controls="collapseExample">
+      Adjectives declention
+    </button>
+  </p>
+  <div class="collapse bg-light p-3 rounded-4" id="collapseExample3">
+
+    <p class="d-flex gap-1 p-2 m-0">
+      <button class="btn btn1" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExampleS" aria-expanded="false" aria-controls="collapseExample">
+        Strong declention
+      </button>
+    </p>
+    <div class="collapse bg-light p-3 rounded-4" id="collapseExampleS">
+  <h6>Strong declention (no article)</h6> You use strong declention when there is no article before the noun. 
+  <!-- data is an example of passing value as a property -->
+  <!-- headerStyles is an example of passing value as an attribute - note that it needs to be stringified -->
+  <app-fida-table [name]="'S'"></app-fida-table>
+    </div>
+    <p class="d-flex gap-1 p-2 m-0">
+      <button class="btn btn1" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExampleW" aria-expanded="false" aria-controls="collapseExample">
+        Weak declention
+      </button>
+    </p>
+
+    <div class="collapse bg-light p-3 rounded-4" id="collapseExampleW">
+  <h6>Weak declention (definite article)</h6> You use weak declention when there is a definite article before the noun.
+  <!-- data is an example of passing value as a property -->
+  <!-- headerStyles is an example of passing value as an attribute - note that it needs to be stringified -->
+  <app-fida-table [name]="'W'"></app-fida-table>
+    </div>
+    <p class="d-flex gap-1 p-2 m-0">
+      <button class="btn btn1" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExampleM" aria-expanded="false" aria-controls="collapseExample">
+        Mixed declention
+      </button>
+    </p>
+
+    <div class="collapse bg-light p-3 rounded-4" id="collapseExampleM">
+  <h6>Mixed declention (indefinite article)</h6> You use mixed declention when there is an indefinite article before the noun.
+  <!-- data is an example of passing value as a property -->
+  <!-- headerStyles is an example of passing value as an attribute - note that it needs to be stringified -->
+  <app-fida-table [name]="'M'"></app-fida-table>
+    </div>
+</div>
+
+<p class="d-flex gap-1 p-2 m-0">
+  <button class="btn " type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample4" aria-expanded="false" aria-controls="collapseExample">
+    Gender
+  </button>
+</p>
+<div class="collapse bg-light p-3 rounded-4" id="collapseExample4">
+    <h6>Gender</h6>
+    <!-- data is an example of passing value as a property -->
+    <!-- headerStyles is an example of passing value as an attribute - note that it needs to be stringified -->
+    <app-fida-table [name]="'G'"></app-fida-table>
+
+</div>
+
+<p class="d-flex gap-1 p-2 m-0">
+  <button class="btn " type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample5" aria-expanded="false" aria-controls="collapseExample">
+    Modal verbs
+  </button>
+</p>
+<div class="collapse bg-light p-3 rounded-4" id="collapseExample5">
+    <h6>Modal verbs</h6>
+    <!-- data is an example of passing value as a property -->
+    <!-- headerStyles is an example of passing value as an attribute - note that it needs to be stringified -->
+    <app-fida-table [name]="'T'"></app-fida-table>
+
+</div>
+
+
+
