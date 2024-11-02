@@ -7,7 +7,7 @@ import { GrammarComponent } from './grammar/grammar.component';
 import { VocabularyComponent } from './vocabulary/vocabulary.component';
 import { QuizComponent } from './quiz/quiz.component';
 import { HttpClientModule } from '@angular/common/http';
-import { FormsModule } from '@angular/forms';
+import { FormsModule }  from '@angular/forms';
 import { RouterModule } from '@angular/router';
 import { TableComponent } from './grammar/table.component';
 import { OrderComponent } from './quiz/order.component';
