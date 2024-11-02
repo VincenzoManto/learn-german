@@ -1,0 +1,1 @@
+:root{--primary: #4a69d4}.collapse:not(.show){display:none}.collapsing{height:0;overflow:hidden;transition:height .35s ease}.collapsing.collapse-horizontal{width:0;height:auto;transition:width .35s ease}app-fida-table,active-table{width:100%}.btn-primary{background:var(--primary)!important}
