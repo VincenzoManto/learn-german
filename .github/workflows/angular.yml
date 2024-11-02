@@ -20,7 +20,7 @@ jobs:
           node-version: '18'  # Specify the version of Node.js that matches Angular requirements
 
       - name: Install dependencies
-        run: npm install
+        run: npm install --force
 
       - name: Build Angular project
         run: npm run build -- --output-path=dist  # Customize if your build command or output path differs
