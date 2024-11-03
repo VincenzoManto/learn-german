@@ -73,14 +73,11 @@ declare var JSConfetti: any;
         );
       }
     }
-    ciaoPost(){
-      for (let i = 0; i < this.postSlice.length; i++) {
-        const element = this.postSlice[i];
+    ciaoPost(item: string){
         window.open(
-          'https://dict.leo.org/italienisch-deutsch/' + element,
+          'https://dict.leo.org/italienisch-deutsch/' + item,
           '_blank'
         );
-      }
     }
 
     checkOption(){
